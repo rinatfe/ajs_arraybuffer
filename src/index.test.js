@@ -13,10 +13,10 @@ const binar = (function getBuffer() {
     })(data);
   })();
 
-  const string = "{\"data\":{\"user\":{\"id\":1,\"name\":\"Hitman\",\"level\":10}}}";
+  const string = '{"data":{"user":{"id":1,"name":"Hitman","level":10}}}';
 
 test('test', () => {
     const buffer = new ArrayBufferConverter();
-    buffer.onload(binar);
+    buffer.load(binar);
     expect(buffer.toString()).toEqual(string);
   });

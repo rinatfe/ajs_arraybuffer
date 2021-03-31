@@ -3,7 +3,7 @@ export default class ArrayBufferConverter {
     this.buffer;
   }
 
-  onload(buffer) {
+  load(buffer) {
     this.buffer = buffer;
   }
 
